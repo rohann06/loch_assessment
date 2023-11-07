@@ -5,13 +5,19 @@ import toast from "react-hot-toast";
 const EmailForm = () => {
   const [email, setEmail] = useState("");
 
+  const isEmail = (email: string) =>
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+
   //Submitting the email for check
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    toast.success("Entered email is correct....");
+    if (!isEmail(email)) {
+      toast.error("Please enter a valid email!");
+    } else {
+      toast.success("Email is correct....");
+    }
     setEmail("");
-    
   };
 
   return (
@@ -25,7 +31,7 @@ const EmailForm = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            type="email"
+            type="text"
             placeholder="Your email address"
             className=" flex-1 border-0 focus-visible:ring-0 focus-visible:ring-transparent rounded-lg px-2 outline-none w-full"
           />
