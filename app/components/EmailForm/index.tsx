@@ -27,7 +27,7 @@ const EmailForm = () => {
     <>
       <form
         onSubmit={handleEmailSubmit}
-        className=" mt-5 mb-8 flex flex-col items-start gap-y-5"
+        className=" mt-5 mb-8 flex flex-col items-start gap-y-5 z-30"
       >
         <div className=" w-[340px] rounded-lg border h-[59px] p-4 shadow-md hover:border-black">
           <input

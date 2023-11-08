@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 interface TestimonialProps {
@@ -8,7 +9,7 @@ interface TestimonialProps {
 
 const TestimonialCard = ({ name, role, description }: TestimonialProps) => {
   return (
-    <div className=" border border-black bg-[#FFFFFF] rounded-lg w-auto h-[136px] p-[20px] mt-[40px]">
+    <div className="  bg-[#FFFFFF] rounded-lg w-auto h-[136px] p-[20px] mt-[40px] drop-shadow-xl">
       <div className=" flex items-center gap-x-[8px]">
         <p className=" font-medium">{name}</p>
         <p className=" text-[#96979A] text-[13px]">{role}</p>
