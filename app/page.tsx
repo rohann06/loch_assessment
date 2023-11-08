@@ -1,5 +1,7 @@
 import EmailForm from "./components/EmailForm";
-import Testimonial from "./components/Testimonial";
+import TestimonialCard from "./components/TestimonialCard";
+import Testimonial from "./components/TestimonialCard";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -32,8 +34,15 @@ export default function Home() {
           <p className=" leading-[30px] text-[25px] text-right text-[#F2F2F2] my-[22px]">
             Testimonials
           </p>
-          <div className=" border border-[#E5E5E6] h-[1px] "/>
-          <Testimonial />
+          <div className=" border border-[#E5E5E6] h-[1px] " />
+
+          <div className=" flex justify-between items-baseline">
+            <img src="./lochLogo.png" alt="logo" className=" w-[60px] h-auto" />
+
+            <div className=" flex items-center gap-x-[20px] absolute">
+              <Testimonials />
+            </div>
+          </div>
         </div>
       </div>
 
