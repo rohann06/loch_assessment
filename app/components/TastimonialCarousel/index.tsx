@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const images = [
   {
@@ -20,17 +22,41 @@ const images = [
 ];
 
 const TastimonialCarousel = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 1450 },
+      items: 2.5,
+    },
+    desktop: {
+      breakpoint: { max: 1440, min: 1024 },
+      items: 1.5,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
-    <div className=" flex items-center gap-x-[14px] h-[136px]">
+    <Carousel
+      className="h-[136px] w-full"
+      arrows={false}
+      responsive={responsive}
+    >
       {images.map((image, index) => (
         <img
           key={index}
           src={image.url}
           alt={image.alt}
           className={image.style}
+          draggable={false}
         />
       ))}
-    </div>
+    </Carousel>
   );
 };
 

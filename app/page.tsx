@@ -7,10 +7,9 @@ export default function Home() {
     <main className=" md:flex items-center h-screen overflow-x-hidden ">
       {/* Detail side */}
       <div className=" h-screen md:w-[55.56%] bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-[#1FA911] from-[18%] via-[#2F15D0] via-[60%] to-[rgb(0,0,0)] to-[90%]">
-        <div className=" flex flex-col w-full pl-[62px]">
+        <div className=" flex flex-col w-full pl-[62px] pt-[100px]">
           {/* 1stsection */}
           <div className=" text-[#F2F2F2] h-[251px] flex justify-between items-center w-full">
-
             <div className=" text-start">
               <div>
                 <img
@@ -51,11 +50,11 @@ export default function Home() {
           </div>
 
           {/* 3rdsection */}
-          <div className="  w-full z-10 pr-[65px]">
-            <p className=" leading-[30px] text-[25px] text-right text-[#F2F2F2] my-[22px]">
+          <div className="  w-full z-10">
+            <p className=" leading-[30px] text-[25px] text-right text-[#F2F2F2] my-[22px] pr-[65px]">
               Testimonials
             </p>
-            <div className=" border border-[#E5E5E6] h-[1px]" />
+            <div className=" border border-[#E5E5E6] h-[1px] pr-[65px]" />
 
             <div className=" flex justify-between  items-end gap-x-[40px] mt-[40px] h-[136px]">
               <img
