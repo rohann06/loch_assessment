@@ -7,7 +7,7 @@ export default function Home() {
     <main className=" md:flex items-center h-screen overflow-x-hidden ">
       {/* Detail side */}
       <div className=" md:h-screen md:w-[55.56%] bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-[#1FA911] from-[18%] via-[#2F15D0] via-[60%] to-[rgb(0,0,0)] to-[90%] xl:pt-10">
-        <div className=" flex flex-col w-full lg:pl-[62px] pt-10 lg:pt-0">
+        <div className=" flex flex-col w-full lg:pl-[62px] pt-4 lg:pt-0">
           {/* 1stsection */}
           <div className=" text-[#F2F2F2] h-[251px] md:flex md:justify-between md:items-center w-full">
             <div className=" text-center lg:text-start px-[20px] my-10 lg:my-0">
@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       {/* Email side */}
-      <div className=" md:h-screen md:w-[44.44%] flex justify-center items-center lg:my-10 my-10">
+      <div className=" md:h-screen md:w-[44.44%] flex justify-center items-center lg:my-0 my-10">
         <div className=" w-[365px] h-[347px]">
           <div className=" p-2">
             <h3 className=" text-[39px] text-[#B0B1B3] font-medium">
