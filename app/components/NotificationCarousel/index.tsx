@@ -20,10 +20,10 @@ const images = [
 const NotificationCarousel = () => {
   return (
     <Marquee
-      className={" w-full lg:w-[261px] mt-5 lg:mt-0"}
+      className={" w-full lg:w-[26  1px] mt-5 lg:mt-0 lg:mb-12"}
       gradient={true}
       gradientColor="black"
-      gradientWidth={85}
+      gradientWidth={75}
     >
       {images.map((image, index) => (
         <img

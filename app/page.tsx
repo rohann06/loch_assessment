@@ -27,7 +27,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="lg:p-[46px]">
+            <div>
               <NotificationCarousel />
             </div>
           </div>
