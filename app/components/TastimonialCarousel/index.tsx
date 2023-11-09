@@ -46,6 +46,8 @@ const TastimonialCarousel = () => {
       className="h-[136px] w-full"
       arrows={false}
       responsive={responsive}
+      focusOnSelect={true}
+      infinite={true}
     >
       {images.map((image, index) => (
         <img
