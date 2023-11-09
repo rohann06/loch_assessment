@@ -30,7 +30,7 @@ const NotificationCarousel = () => {
           key={index}
           src={image.url}
           alt={image.alt}
-          className=" w-[140.7px] h-[148px] md:w-[189.7px] md:h-[168px]"
+          className=" w-auto h-[158px] md:w-[189.7px] md:h-[168px]"
         />
       ))}
     </Marquee>
