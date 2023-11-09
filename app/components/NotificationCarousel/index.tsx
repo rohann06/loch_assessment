@@ -19,18 +19,21 @@ const images = [
 
 const NotificationCarousel = () => {
   return (
-    <div className=" flex items-center gap-x-[14px] h-[304px]">
-      <Marquee className={" w-[407px]"} gradient={true} gradientColor='black' gradientWidth={65}>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.url}
-            alt={image.alt}
-            className=" w-[189.7px] h-[171.5px]"
-          />
-        ))}
-      </Marquee>
-    </div>
+    <Marquee
+      className={" w-full lg:w-[261px] mt-5 lg:mt-0"}
+      gradient={true}
+      gradientColor="black"
+      gradientWidth={85}
+    >
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image.url}
+          alt={image.alt}
+          className=" w-[140.7px] h-[148px] md:w-[189.7px] md:h-[168px]"
+        />
+      ))}
+    </Marquee>
   );
 };
 
